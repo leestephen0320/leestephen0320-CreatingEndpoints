@@ -3,7 +3,7 @@ Javalin is a web framework for java. This allows other machines to send HTTP req
 with Javalin, and to send appropriate HTTP responses based on that specific Request. An endpoint is the pattern in 
 the URL which directs our request to the appropriate code. For example:
     www.website.com/this/leads/to/some/code/in/our/app
-
+ 
 ## Parts of HTTP:
 - **HTTP Request**
     - *An HTTP request is how a client computer sends a request to a server computer. This only works if that server 

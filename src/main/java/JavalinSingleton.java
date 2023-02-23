@@ -18,6 +18,19 @@ public class JavalinSingleton {
         Javalin app = Javalin.create();
         
         //write endpoint here
+        app.start(9000);
+
+        // HTTP GET REQUEST to http://localhost:9000/get-request
+        app.get("/get-request", ctx -> {
+            //logic to be executed when this endpoint is hit
+        });
+
+
+        // HTTP POST REQUEST to http://localhost:9000/post-request
+        app.post("/post-request", ctx -> {
+            //logic to be executed when this endpoint is hit
+        });
+
 
         return app;
     }
