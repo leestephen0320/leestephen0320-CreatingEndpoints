@@ -22,7 +22,6 @@ public class JavalinSingleton {
 
         app.get("/hello", ctx -> {
             //logic to be executed when this endpoint is hit
-            ctx.result("true");
         });
     
 
