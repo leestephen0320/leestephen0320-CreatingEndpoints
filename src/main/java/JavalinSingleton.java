@@ -15,11 +15,8 @@ public class JavalinSingleton {
      * Note: Please refer to the "CreatingEndpoints.MD" file for more assistance if needed.
      */
     public static Javalin getInstance(){
-        Javalin app = Javalin.create();
+        Javalin app = Javalin.create().start(9000);
         
-        //write endpoint here
-        app.start(9000);
-
         app.get("/hello", ctx -> {
             //logic to be executed when this endpoint is hit
         //logic to be executed when this endpoint is hit
