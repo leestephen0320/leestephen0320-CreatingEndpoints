@@ -20,18 +20,11 @@ public class JavalinSingleton {
         //write endpoint here
         app.start(9000);
 
-        app.get("/get-request", ctx -> {
+        app.get("/hello", ctx -> {
             //logic to be executed when this endpoint is hit
             ctx.result("true");
         });
     
-    
-        // HTTP POST REQUEST to http://localhost:9000/post-request
-        app.post("/post-request", ctx -> {
-            //logic to be executed when this endpoint is hit
-            ctx.result("true");
-        });
-
 
         return app;
     }
